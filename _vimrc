@@ -12,6 +12,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'fuenor/qfixhowm'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Align'
+NeoBundle 'surround.vim'
 
 filetype plugin on
 filetype indent on
