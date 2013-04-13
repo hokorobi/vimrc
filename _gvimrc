@@ -7,3 +7,9 @@ set guifont=Takaoゴシック:h11
 syntax enable
 set background=dark
 colorscheme solarized
+
+"---------------------------------------------------------------------------
+" カレント行にアンダーライン
+set cursorline
+highlight CursorLine gui=underline guifg=NONE guibg=NONE
+
