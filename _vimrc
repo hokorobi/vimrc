@@ -10,6 +10,7 @@ call neobundle#rc(expand('~/_vim/bundle'))
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'fuenor/qfixhowm'
+NeoBundle 'altercation/vim-colors-solarized'
 
 filetype plugin on
 filetype indent on
