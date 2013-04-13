@@ -9,6 +9,7 @@ call neobundle#rc(expand('~/_vim/bundle'))
 " NeoBundle
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'fuenor/qfixhowm'
 
 filetype plugin on
 filetype indent on
