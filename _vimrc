@@ -88,3 +88,9 @@ function! s:unite_my_settings()"{{{
   inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
 endfunction"}}}
 
+"--------------------------------------------------------------------------
+" smartchr
+" ‰‰ŽZŽq‚ÌŠÔ‚É‹ó”’‚ð“ü‚ê‚é
+inoremap <buffer> <expr> ( smartchr#loop('(', '()')
+inoremap <buffer> <expr> { smartchr#loop('{', '{}')
+inoremap <buffer> <expr> ` smartchr#loop('`', '`<>`_')
