@@ -1,3 +1,18 @@
+set nocompatible
+filetype off            " for vundle
+
+if has("vim_starting")
+  set rtp+=$HOME/_vim/bundle/neobundle.vim/
+endif
+call neobundle#rc(expand('~/_vim/bundle'))
+
+" NeoBundle
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/unite.vim'
+
+filetype plugin on
+filetype indent on
+
 "---------------------------------------------------------------------------
 " qfixapp‚Éruntimepath‚ğ’Ê‚·(ƒpƒX‚ÍŠÂ‹«‚É‡‚í‚¹‚Ä‚­‚¾‚³‚¢)
 set runtimepath+=M:\ols\Text\vim\plugins\qfixapp
