@@ -18,6 +18,12 @@ filetype plugin on
 filetype indent on
 
 "---------------------------------------------------------------------------
+" 基本設定
+set hidden  " 編集中でも他のファイルを開けるようにする
+set whichwrap=b,s,h,l,<,>,[,]  " カーソルを行頭、行末で止まらないようにする
+set number  " 行番号表示
+
+"---------------------------------------------------------------------------
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
 set runtimepath+=M:\ols\Text\vim\plugins\qfixapp
 
