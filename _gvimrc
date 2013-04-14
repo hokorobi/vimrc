@@ -8,6 +8,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" IME の有効無効でカーソルの色を変更する。
+" colorscheme の後ろに定義する。
+if has('multi_byte_ime')
+	hi CursorIM guifg=NONE guibg=Green gui=NONE
+endif
+
 "---------------------------------------------------------------------------
 " カレント行にアンダーライン
 set cursorline
