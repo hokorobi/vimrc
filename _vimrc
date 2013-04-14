@@ -24,6 +24,8 @@ set hidden  " 編集中でも他のファイルを開けるようにする
 set whichwrap=b,s,h,l,<,>,[,]  " カーソルを行頭、行末で止まらないようにする
 set number  " 行番号表示
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P  " ステータスラインに文字コードと改行文字を表示
+set clipboard=unnamed  " クリップボードをOSと共有
+set guicursor=a:blinkon0  " カーソルを点滅させない
 
 "---------------------------------------------------------------------------
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
