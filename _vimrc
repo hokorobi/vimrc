@@ -16,6 +16,7 @@ NeoBundle 'surround.vim'
 NeoBundle 'smartchr'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'rgarver/Kwbd.vim'
+NeoBundle 'thinca/vim-ref'
 
 filetype plugin on
 filetype indent on
@@ -98,3 +99,13 @@ endfunction"}}}
 inoremap <buffer> <expr> ( smartchr#loop('(', '()')
 inoremap <buffer> <expr> { smartchr#loop('{', '{}')
 inoremap <buffer> <expr> ` smartchr#loop('`', '`<>`_')
+
+"---------------------------------------------------------------------------
+" ref-vim
+if has("win32")
+  "set encoding ÇÊÇËè„Ç…èëÇ≠Ç±Ç∆
+  let &termencoding = &encoding
+endif
+set encoding=utf-8
+set fileencodings=utf-8,cp932,euc-jp
+
