@@ -14,6 +14,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Align'
 NeoBundle 'surround.vim'
 NeoBundle 'smartchr'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'rgarver/Kwbd.vim'
 
 filetype plugin on
 filetype indent on
