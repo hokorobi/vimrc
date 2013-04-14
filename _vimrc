@@ -17,6 +17,7 @@ NeoBundle 'smartchr'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'thinca/vim-ref'
+NeoBundle 'Rykka/riv.vim'
 
 filetype plugin on
 filetype indent on
