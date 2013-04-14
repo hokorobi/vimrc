@@ -38,7 +38,7 @@ let howm_filename        = '%Y/%m/%Y%m%d%H%M%S.howm'
 let howm_fileencoding    = 'cp932'
 let howm_fileformat      = 'dos'
 " äOïîgrepÇÃê›íË
-let mygrepprg            = 'M:\OLS\Utility\cmd\grep.exe'
+"let mygrepprg            = 'M:\OLS\Utility\cmd\grep.exe'
 
 "---------------------------------------------------------------------------
 " Unite.vim
