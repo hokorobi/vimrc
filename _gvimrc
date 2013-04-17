@@ -1,6 +1,9 @@
 "---------------------------------------------------------------------------
 " 基本設定
 set guifont=Takaoゴシック:h11
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
 
 "---------------------------------------------------------------------------
 " Solarized
