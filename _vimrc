@@ -16,7 +16,6 @@ NeoBundle 'surround.vim'
 NeoBundle 'smartchr'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'rgarver/Kwbd.vim'
-NeoBundle 'thinca/vim-ref'
 NeoBundle 'Rykka/riv.vim'
 
 filetype plugin on
@@ -102,15 +101,6 @@ inoremap <buffer> <expr> { smartchr#loop('{', '{}')
 inoremap <buffer> <expr> ` smartchr#loop('`', '`<>`_')
 
 "---------------------------------------------------------------------------
-" ref-vim
-if has("win32")
-  "set encoding ÇÊÇËè„Ç…èëÇ≠Ç±Ç∆
-  let &termencoding = &encoding
-endif
-set encoding=utf-8
-set fileencodings=utf-8,cp932,euc-jp
-
-"---------------------------------------------------------------------------
 " neocomplcache
 " Disable AutoComplPop. Comment out this line if AutoComplPop is not installed.
 " let g:acp_enableAtStartup = 0
@@ -126,4 +116,3 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
 " buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder 
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-
