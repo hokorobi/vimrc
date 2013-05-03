@@ -119,3 +119,11 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
 " buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder 
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+"---------------------------------------------------------------------------
+" キーマッピング
+
+" ; と : の入れ替え
+noremap ; :
+noremap : ;
+
