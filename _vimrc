@@ -25,6 +25,27 @@ filetype plugin on
 filetype indent on
 
 "---------------------------------------------------------------------------
+"Kaoriya版に添付されているプラグインの無効化
+"問題があるものもあるので一律に無効化します。
+"ファイルを参照(コメント部分で gf を実行)した上で、必要なプラグインは
+"let plugin_..._disableの設定行をコメント化(削除)して有効にして下さい。
+" https://sites.google.com/site/fudist/Home/vim-nihongo-ban/kaoriya-trouble#TOC-Kaoriya-
+"$VIM/plugins/kaoriya/autodate.vim
+let plugin_autodate_disable  = 1
+"$VIM/plugins/kaoriya/cmdex.vim
+"let plugin_cmdex_disable     = 1  " Tutorial は使う
+"$VIM/plugins/kaoriya/dicwin.vim
+let plugin_dicwin_disable    = 1
+"$VIMRUNTIME/plugin/format.vim
+let plugin_format_disable    = 1
+"$VIM/plugins/kaoriya/hz_ja.vim
+let plugin_hz_ja_disable     = 1
+"$VIM/plugins/kaoriya/scrnmode.vim
+let plugin_scrnmode_disable  = 1
+"$VIM/plugins/kaoriya/verifyenc.vim
+"let plugin_verifyenc_disable = 1
+
+"---------------------------------------------------------------------------
 " 基本設定
 set hidden  " 編集中でも他のファイルを開けるようにする
 set whichwrap=b,s,h,l,<,>,[,]  " カーソルを行頭、行末で止まらないようにする
