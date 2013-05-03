@@ -1,12 +1,13 @@
+"---------------------------------------------------------------------------
+" NeoBundle
 set nocompatible
-filetype off            " for vundle
+filetype off
 
 if has("vim_starting")
   set rtp+=$HOME/_vim/bundle/neobundle.vim/
 endif
 call neobundle#rc(expand('~/_vim/bundle'))
 
-" NeoBundle
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'fuenor/qfixhowm'
