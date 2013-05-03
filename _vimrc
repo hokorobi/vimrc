@@ -127,3 +127,12 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 noremap ; :
 noremap : ;
 
+" •\¦ã‚ÌsˆÚ“®•ÏX
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+
+" Œë‘€ì–h~‚Ì‚½‚ß–³Œø‚Ö
+nnoremap ZQ <Nop>  " •Û‘¶‚¹‚¸‚É•Â‚¶‚é
+
