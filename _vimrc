@@ -136,3 +136,7 @@ nnoremap gk k
 " 誤操作防止のため無効へ
 nnoremap ZQ <Nop>  " 保存せずに閉じる
 
+" バッファ移動
+noremap <C-Right> :bn<CR>
+noremap <C-Left> :bp<CR>
+
