@@ -146,7 +146,6 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
 "---------------------------------------------------------------------------
 " kwbd
-noremap <C-w> call My_bclose()
 function! My_bclose()
 	if &modified == 0
 		Kwbd
@@ -154,12 +153,13 @@ function! My_bclose()
 	endif
 	let confirm = confirm('Save buffer?', "&Yes\n&No\n&Cancel", 1, 'Question')
 	if confirm == 1
-		save
+		write
 		Kwbd
 	elseif confirm == 2
 		Kwbd
 	endif
 endfunction
+noremap <C-w>	:<C-u>call My_bclose()<CR>
 
 
 "---------------------------------------------------------------------------
