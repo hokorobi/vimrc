@@ -179,4 +179,18 @@ noremap <A-j>	<PageDown>
 inoremap <A-j>	<PageDown>
 noremap <A-k>	<PageUp>
 inoremap <A-k>	<PageUp>
+inoremap <C-e>	<End>
+inoremap <C-a>	<Home>
+inoremap <C-n>	<Down>
+inoremap <C-p>	<Up>
+noremap <C-e>	<End>
+noremap <C-a>	<Home>
+noremap <C-n>	<Down>
+noremap <C-p>	<Up>
+
+" ウィンドウ間移動
+noremap <C-l>	<C-w><C-w>
+
+" バッファ変更時のみ保存
+nnoremap <silent> <C-s> :<C-u>update<CR>
 
