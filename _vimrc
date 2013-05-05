@@ -165,8 +165,8 @@ nnoremap gk k
 nnoremap ZQ <Nop>  " 保存せずに閉じる
 
 " バッファ移動
-noremap <C-Right> :bn<CR>
-noremap <C-Left> :bp<CR>
+noremap <C-Right> :<C-u>bn<CR>
+noremap <C-Left> :<C-u>bp<CR>
 
 " コピー・貼り付け
 vnoremap <C-c>	"+y
