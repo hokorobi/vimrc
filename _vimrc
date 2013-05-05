@@ -168,3 +168,15 @@ nnoremap ZQ <Nop>  " 保存せずに閉じる
 noremap <C-Right> :bn<CR>
 noremap <C-Left> :bp<CR>
 
+" コピー・貼り付け
+vnoremap <C-c>	"+y
+inoremap <C-v>	<MiddleMouse>
+nnoremap <C-v>	"+gP
+cnoremap <C-v>	<MiddleMouse>
+
+" カーソル移動
+noremap <A-j>	<PageDown>
+inoremap <A-j>	<PageDown>
+noremap <A-k>	<PageUp>
+inoremap <A-k>	<PageUp>
+
