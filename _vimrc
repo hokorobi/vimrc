@@ -22,6 +22,7 @@ NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'Rykka/riv.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'rgarver/Kwbd.vim'
 
 filetype plugin on
 filetype indent on
@@ -142,6 +143,10 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
 " buffer file name pattern that locks neocomplcache. e.g. ku.vim or fuzzyfinder 
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+"---------------------------------------------------------------------------
+" kwbd
+noremap <C-w>	:Kwbd<CR>
 
 "---------------------------------------------------------------------------
 " キーマッピング
