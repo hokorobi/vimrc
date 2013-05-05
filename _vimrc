@@ -20,6 +20,7 @@ NeoBundle 'kana/vim-smartchr'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'Rykka/riv.vim'
+NeoBundle 'thinca/vim-quickrun'
 
 filetype plugin on
 filetype indent on
