@@ -161,6 +161,29 @@ function! My_bclose()
 	endif
 endfunction
 
+
+"---------------------------------------------------------------------------
+" セッションの自動保存と復帰
+" http://hail2u.net/blog/software/vim-auto-save-and-restore-session.html
+augroup SessionAutocommands
+  autocmd!
+
+  autocmd VimEnter * nested call <SID>RestoreSessionWithConfirm()
+  autocmd VimLeave * execute 'SaveSession'
+augroup END
+
+command! RestoreSession :source ~/_vim/.session
+command! SaveSession    :mksession! ~/_vim/.session
+
+" Restore session with confirm
+function! s:RestoreSessionWithConfirm()
+  let msg = 'Do you want to restore previous session?'
+
+  if !argc() && confirm(msg, "&Yes\n&No", 1, 'Question') == 1
+    execute 'RestoreSession'
+  endif
+endfunction
+
 "---------------------------------------------------------------------------
 " キーマッピング
 
