@@ -219,10 +219,23 @@ inoremap <C-e>	<End>
 inoremap <C-a>	<Home>
 inoremap <C-n>	<Down>
 inoremap <C-p>	<Up>
-noremap <C-e>	<End>
-noremap <C-a>	<Home>
-noremap <C-n>	<Down>
-noremap <C-p>	<Up>
+inoremap <C-f>	<Right>
+inoremap <C-b>	<Left>
+inoremap <C-h>	<BS>
+inoremap <C-d>	<Del>
+noremap <C-e>	$
+noremap <C-a>	0
+noremap <C-n>	j
+noremap <C-p>	k
+noremap <C-f>	l
+noremap <C-b>	h
+cnoremap <C-a>	<Home>
+cnoremap <C-n>	<Down>
+cnoremap <C-p>	<Up>
+cnoremap <C-f>	<Right>
+cnoremap <C-b>	<Left>
+cnoremap <C-h>	<BS>
+cnoremap <C-d>	<Del>
 
 " ウィンドウ間移動
 noremap <C-l>	<C-w><C-w>
