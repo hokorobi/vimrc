@@ -21,6 +21,7 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'Rykka/riv.vim'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'tyru/open-browser.vim'
 
 filetype plugin on
 filetype indent on
