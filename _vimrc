@@ -202,40 +202,40 @@ noremap <C-Right> :<C-u>bn<CR>
 noremap <C-Left> :<C-u>bp<CR>
 
 " コピー・貼り付け
-vnoremap <C-c>	"+y
-inoremap <C-v>	<MiddleMouse>
-nnoremap <C-v>	"+gP
-cnoremap <C-v>	<MiddleMouse>
+vnoremap <C-c> "+y
+inoremap <C-v> <MiddleMouse>
+nnoremap <C-v> "+gP
+cnoremap <C-v> <MiddleMouse>
 
 " カーソル移動
-noremap <A-j>	<PageDown>
-inoremap <A-j>	<PageDown>
-noremap <A-k>	<PageUp>
-inoremap <A-k>	<PageUp>
-inoremap <C-e>	<End>
-inoremap <C-a>	<Home>
-inoremap <C-n>	<Down>
-inoremap <C-p>	<Up>
-inoremap <C-f>	<Right>
-inoremap <C-b>	<Left>
-inoremap <C-h>	<BS>
-inoremap <C-d>	<Del>
-noremap <C-e>	$
-noremap <C-a>	0
-noremap <C-n>	j
-noremap <C-p>	k
-noremap <C-f>	l
-noremap <C-b>	h
-cnoremap <C-a>	<Home>
-cnoremap <C-n>	<Down>
-cnoremap <C-p>	<Up>
-cnoremap <C-f>	<Right>
-cnoremap <C-b>	<Left>
-cnoremap <C-h>	<BS>
-cnoremap <C-d>	<Del>
+noremap <A-j> <PageDown>
+inoremap <A-j> <PageDown>
+noremap <A-k> <PageUp>
+inoremap <A-k> <PageUp>
+inoremap <C-e> <End>
+inoremap <C-a> <Home>
+inoremap <C-n> <Down>
+inoremap <C-p> <Up>
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-h> <BS>
+inoremap <C-d> <Del>
+noremap <C-e> $
+noremap <C-a> 0
+noremap <C-n> j
+noremap <C-p> k
+noremap <C-f> l
+noremap <C-b> h
+cnoremap <C-a> <Home>
+cnoremap <C-n> <Down>
+cnoremap <C-p> <Up>
+cnoremap <C-f> <Right>
+cnoremap <C-b> <Left>
+cnoremap <C-h> <BS>
+cnoremap <C-d> <Del>
 
 " ウィンドウ間移動
-noremap <C-l>	<C-w><C-w>
+noremap <C-l> <C-w><C-w>
 
 " バッファ変更時のみ保存
 nnoremap <silent> <C-s> :<C-u>update<CR>
@@ -243,5 +243,5 @@ nnoremap <silent> <C-s> :<C-u>update<CR>
 " ビジュアルモードローテーション
 " ノーマルモードから v でビジュアルモード、さらに v で矩形ビジュアルモード、さ
 " らに v でノーマルモード
-vnoremap v	<C-v>
+vnoremap v <C-v>
 
