@@ -123,9 +123,9 @@ endfunction"}}}
 "--------------------------------------------------------------------------
 " smartchr
 " ‰‰ŽZŽq‚ÌŠÔ‚É‹ó”’‚ð“ü‚ê‚é
-inoremap <buffer> <expr> ( smartchr#loop('(', '()')
-inoremap <buffer> <expr> { smartchr#loop('{', '{}')
-inoremap <buffer> <expr> ` smartchr#loop('`', '`<>`_')
+inoremap <buffer> ( ( smartchr#loop('(', '()')
+inoremap <buffer> { { smartchr#loop('{', '{}')
+inoremap <buffer> ' ` smartchr#loop('`', '`<>`_')
 
 "---------------------------------------------------------------------------
 " neocomplcache
