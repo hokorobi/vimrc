@@ -16,7 +16,6 @@ NeoBundle 'fuenor/qfixhowm'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Align'
 NeoBundle 'anyakichi/vim-surround'
-NeoBundle 'kana/vim-smartchr'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'Rykka/riv.vim'
@@ -120,13 +119,6 @@ function! s:unite_my_settings()"{{{
   nnoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
   inoremap <silent> <buffer> <expr> <C-o> unite#do_action('open')
 endfunction"}}}
-
-"--------------------------------------------------------------------------
-" smartchr
-" ‰‰ŽZŽq‚ÌŠÔ‚É‹ó”’‚ð“ü‚ê‚é
-inoremap <buffer> ( ( smartchr#loop('(', '()')
-inoremap <buffer> { { smartchr#loop('{', '{}')
-inoremap <buffer> ' ` smartchr#loop('`', '`<>`_')
 
 "---------------------------------------------------------------------------
 " neocomplcache
