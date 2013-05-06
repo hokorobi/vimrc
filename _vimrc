@@ -245,3 +245,7 @@ nnoremap <silent> <C-s> :<C-u>update<CR>
 " らに v でノーマルモード
 vnoremap v <C-v>
 
+" タブ間移動
+noremap <C-Tab> :<C-u>tabnext<CR>
+noremap <C-S-Tab> :<C-u>tabprevious<CR>
+
