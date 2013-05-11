@@ -128,7 +128,7 @@ function! s:unite_my_settings()"{{{
   "ctrl+jで縦に分割して開く
   nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
   inoremap <silent> <buffer> <expr> <C-j> unite#do_action('split')
-  "ctrl+jで横に分割して開く
+  "ctrl+lで横に分割して開く
   nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
   inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
   "ctrl+oでその場所に開く
