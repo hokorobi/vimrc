@@ -137,7 +137,7 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
 "---------------------------------------------------------------------------
 " kwbd
-let s:bundle = neobundle#get("unite.vim")
+let s:bundle = neobundle#get('Kwbd.vim')
 function! s:bundle.hooks.on_source(bundle)
   function! My_bclose()
     if &modified == 0
