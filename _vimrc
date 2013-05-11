@@ -98,7 +98,7 @@ nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>
 "レジスタ一覧
 nnoremap <silent> [unite]r :<C-u>Unite -buffer-name=register register<CR>
 "最近使用したファイル一覧
-nnoremap <silent> [unite]m :<C-u>Unite file_mru<CR>
+nnoremap <silent> [unite]m :<C-u>Unite file_mru:long<CR>
 "ブックマーク一覧
 nnoremap <silent> [unite]c :<C-u>Unite bookmark<CR>
 "ブックマークに追加
