@@ -56,6 +56,7 @@ set number  " 行番号表示
 set statusline=%<%f\ %m%r%h%w%y%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P  " ステータスラインに文字コードと改行文字を表示
 "set clipboard=unnamed  " クリップボードをOSと共有
 set guicursor=a:blinkon0  " カーソルを点滅させない
+set scrolloff=999  " カーソルは画面上の真ん中に表示する
 
 "---------------------------------------------------------------------------
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
