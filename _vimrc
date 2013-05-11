@@ -25,7 +25,11 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'kana/vim-smartinput'
 NeoBundle 'Eivy/savevers.vim'
-NeoBundle 'tsukkee/lingr-vim'
+NeoBundleLazy 'tsukkee/lingr-vim', {
+      \ 'autoload':{
+      \     'commands':'LingrLaunch'
+      \     },
+      \ }
 
 filetype plugin on
 filetype indent on
