@@ -54,6 +54,8 @@ set statusline=%<%f\ %m%r%h%w%y%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c
 "set clipboard=unnamed  " クリップボードをOSと共有
 set guicursor=a:blinkon0  " カーソルを点滅させない
 set scrolloff=999  " カーソルは画面上の真ん中に表示する
+set backupdir=M:/Data/Backup/Win/OLS/Text/xyzzy/backup
+
 
 "---------------------------------------------------------------------------
 " QFixHowm
