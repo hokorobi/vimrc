@@ -30,6 +30,7 @@ NeoBundleLazy 'tsukkee/lingr-vim', {
       \     'commands':'LingrLaunch'
       \     },
       \ }
+NeoBundle 'Yggdroot/indentLine'
 
 filetype plugin on
 filetype indent on
