@@ -254,6 +254,7 @@ noremap <C-l> <C-w><C-w>
 
 " バッファ変更時のみ保存
 nnoremap <silent> <C-s> :<C-u>update<CR>
+inoremap <C-S> <C-O>:update<CR>
 
 " ビジュアルモードローテーション
 " ノーマルモードから v でビジュアルモード、さらに v で矩形ビジュアルモード、さ
