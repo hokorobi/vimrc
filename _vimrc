@@ -56,6 +56,8 @@ set guicursor=a:blinkon0  " カーソルを点滅させない
 set scrolloff=999  " カーソルは画面上の真ん中に表示する
 
 "---------------------------------------------------------------------------
+" QFixHowm
+
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
 set runtimepath+=M:\ols\Text\vim\plugins\qfixapp
 
