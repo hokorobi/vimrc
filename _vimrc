@@ -66,6 +66,10 @@ set guicursor=a:blinkon0  " カーソルを点滅させない
 set scrolloff=999  " カーソルは画面上の真ん中に表示する
 set backupdir=M:/Data/Backup/Win/OLS/Text/xyzzy/backup
 
+" vimrc 全体で使う augroup を定義
+augroup MyVimrc
+  autocmd!
+augroup END
 
 "---------------------------------------------------------------------------
 " QFixHowm
@@ -113,7 +117,7 @@ nnoremap <silent> [unite]c :<C-u>Unite bookmark<CR>
 "ブックマークに追加
 nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 "uniteを開いている間のキーマッピング
-autocmd FileType unite call s:unite_my_settings()
+autocmd MyVimrc FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()"{{{
   "ESCでuniteを終了
   nmap <buffer> <ESC> <Plug>(unite_exit)
@@ -173,12 +177,8 @@ unlet s:bundle
 "---------------------------------------------------------------------------
 " セッションの自動保存と復帰
 " http://hail2u.net/blog/software/vim-auto-save-and-restore-session.html
-augroup SessionAutocommands
-  autocmd!
-
-  autocmd VimEnter * nested call <SID>RestoreSessionWithConfirm()
-  autocmd VimLeave * execute 'SaveSession'
-augroup END
+autocmd MyVimrc VimEnter * nested call <SID>RestoreSessionWithConfirm()
+autocmd MyVimrc VimLeave * execute 'SaveSession'
 
 command! RestoreSession :source ~/_vim/.session
 command! SaveSession    :mksession! ~/_vim/.session
@@ -230,7 +230,7 @@ endif
 
 "---------------------------------------------------------------------------
 " Filetype
-au FileType vim setlocal sw=2 ts=2 sts=2 et
+au MyVimrc FileType vim setlocal sw=2 ts=2 sts=2 et
 
 "---------------------------------------------------------------------------
 " キーマッピング
