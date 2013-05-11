@@ -25,6 +25,7 @@ NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'kana/vim-smartinput'
 NeoBundle 'Eivy/savevers.vim'
+NeoBundle 'tsukkee/lingr-vim'
 
 filetype plugin on
 filetype indent on
@@ -215,6 +216,13 @@ let savevers_max = 10
 let versdiff_no_resize=1
 " ウィンドウのサイズを変更する場合にどれだけの幅までを許可するか
 "let versdiff_no_resize=80
+
+"---------------------------------------------------------------------------
+" lingr-vim
+" id, password は別ファイルから読み込み
+if filereadable(expand('~/_vimrc.local'))
+  source ~/_vimrc.local
+endif
 
 "---------------------------------------------------------------------------
 " Filetype
