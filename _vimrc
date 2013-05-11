@@ -177,6 +177,18 @@ function! s:RestoreSessionWithConfirm()
   endif
 endfunction
 
+
+"---------------------------------------------------------------------------
+" vim-smartinput
+
+" vim ‚Å‚Í " ‚Í’Pˆê“ü—Í
+call smartinput#define_rule({
+      \   'at': '\%#',
+      \   'char': '"',
+      \   'input': '"',
+      \   'filetype': ['vim'],
+      \ })
+
 "---------------------------------------------------------------------------
 " Filetype
 au FileType vim setlocal sw=2 ts=2 sts=2 et
