@@ -272,6 +272,9 @@ cnoremap <C-d> <Del>
 " ウィンドウ間移動
 noremap <C-l> <C-w><C-w>
 
+" ウィンドウを閉じる
+noremap <C-q> :<C-u>close<CR>
+
 " バッファ変更時のみ保存
 nnoremap <silent> <C-s> :<C-u>update<CR>
 inoremap <C-S> <C-O>:update<CR>
