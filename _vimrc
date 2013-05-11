@@ -20,7 +20,7 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'rgarver/Kwbd.vim'
 NeoBundle 'kana/vim-smartinput'
-NeoBundle 'vim-scripts/savevers.vim'
+NeoBundle 'Eivy/savevers.vim'
 
 filetype plugin on
 filetype indent on
