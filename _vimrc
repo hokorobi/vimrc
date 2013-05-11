@@ -197,25 +197,21 @@ call smartinput#define_rule({
 
 "---------------------------------------------------------------------------
 " savevers.vim
-let s:bundle = neobundle#get('savevers.vim')
-function! s:bundle.hooks.on_source(bundle)
-  set backup
-  " savevers.vim バックアップファイルの設定" savevers.vimのためにパッチモードにします
-  set patchmode=.clean
-  " カンマで区切られたバックアップを作成するファイル名です "*.c,*.h,*.vim"
-  let savevers_types = "*"
-  " バックアップファイルが書き込まれるディレクトリ（反映されない）
-  " ここでは、オプション"backupdir"と同じディレクトリにしている
-  let savevers_dirs = &backupdir
-  "パッチモードでバージョン管理する最大数(反映されない)
-  let savevers_max = 10
-  " バックアップファイルとの比較でウィンドウのサイズを変更する場合は0
-  let versdiff_no_resize=1
-  " ウィンドウのサイズを変更する場合にどれだけの幅までを許可するか
-  "let versdiff_no_resize=80
-endfunction
-unlet s:bundle
-abc
+set backup
+" savevers.vim バックアップファイルの設定" savevers.vimのためにパッチモードにします
+set patchmode=.clean
+" カンマで区切られたバックアップを作成するファイル名です "*.c,*.h,*.vim"
+let savevers_types = "*"
+" バックアップファイルが書き込まれるディレクトリ
+" ここでは、オプション"backupdir"と同じディレクトリにしている
+let savevers_dirs = &backupdir
+"パッチモードでバージョン管理する最大数
+let savevers_max = 10
+" バックアップファイルとの比較でウィンドウのサイズを変更する場合は0
+let versdiff_no_resize=1
+" ウィンドウのサイズを変更する場合にどれだけの幅までを許可するか
+"let versdiff_no_resize=80
+
 "---------------------------------------------------------------------------
 " Filetype
 au FileType vim setlocal sw=2 ts=2 sts=2 et
