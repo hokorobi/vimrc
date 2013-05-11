@@ -15,7 +15,11 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Align'
 NeoBundle 'anyakichi/vim-surround'
 NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Rykka/riv.vim'
+NeoBundleLazy 'Rykka/riv.vim', {
+      \ 'autoload':{
+      \     'filetypes':['rst'],
+      \   },
+      \ }
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'rgarver/Kwbd.vim'
