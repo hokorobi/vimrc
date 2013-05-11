@@ -3,8 +3,6 @@ scriptencoding cp932  " このファイルのエンコーディング
 "---------------------------------------------------------------------------
 " NeoBundle
 set nocompatible
-filetype off
-
 if has("vim_starting")
   set rtp+=$HOME/_vim/bundle/neobundle.vim/
 endif
