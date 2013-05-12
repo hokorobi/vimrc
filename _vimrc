@@ -93,6 +93,11 @@ augroup MyVimrc
 augroup END
 
 "---------------------------------------------------------------------------
+" grep は quickfix-window を使う
+" エラーが出る。|cw だと問題ないんだがな……
+"autocmd QuickFixCmdPost grep copen
+
+"---------------------------------------------------------------------------
 " QFixHowm
 
 " qfixappにruntimepathを通す(パスは環境に合わせてください)
