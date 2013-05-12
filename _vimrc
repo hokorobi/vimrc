@@ -38,6 +38,9 @@ NeoBundleLazy 'Shougo/vimshell', {
 \ }
 " $HOME/_vim/bundle/vimproc/autoload ‚É kaoriya vim •t‘®‚Ì vimproc_win32.dll ‚ð
 " ”z’u
+NeoBundleLazy 'mbbill/undotree', {
+\   'autoload' : { 'commands' : ['UndotreeToggle' ] },
+\ }
 
 filetype plugin on
 filetype indent on
