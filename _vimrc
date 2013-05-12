@@ -312,12 +312,15 @@ cnoremap <expr> /  getcmdtype() == '/' ? '\/' : '/'
 cnoremap <expr> ?  getcmdtype() == '?' ? '\?' : '?'
 
 " 検索方向が変わってもnは下、Nは上に移動できるように対応
-nnoremap <expr> n <SID>search_forward_p() ? 'nzvzz' : 'Nzvzz'
-nnoremap <expr> N <SID>search_forward_p() ? 'Nzvzz' : 'nzvzz'
-vnoremap <expr> n <SID>search_forward_p() ? 'nzvzz' : 'Nzvzz'
-vnoremap <expr> N <SID>search_forward_p() ? 'Nzvzz' : 'nzvzz'
-onoremap <expr> n <SID>search_forward_p() ? 'nzz' : 'Nzz'
-onoremap <expr> N <SID>search_forward_p() ? 'Nzz' : 'nzz'
+nnoremap <expr> n <SID>search_forward_p() ? 'n' : 'N'
+nnoremap <expr> N <SID>search_forward_p() ? 'N' : 'n'
+vnoremap <expr> n <SID>search_forward_p() ? 'n' : 'N'
+vnoremap <expr> N <SID>search_forward_p() ? 'N' : 'n'
+onoremap <expr> n <SID>search_forward_p() ? 'n' : 'N'
+onoremap <expr> N <SID>search_forward_p() ? 'N' : 'n'
+function! s:search_forward_p()
+  return exists('v:searchforward') ? v:searchforward : 1
+endfunction
 
 " インクリメンタルサーチの最中に次、前の候補に移動する
 cnoremap <expr> <C-s> getcmdtype() == '?' ? "<CR>/<Up>" : getcmdtype() == '/' ? "<CR>/<Up>" : "<C-s>"
