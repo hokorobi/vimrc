@@ -187,6 +187,11 @@ endfunction
 unlet s:bundle
 
 "---------------------------------------------------------------------------
+" open-browser
+nmap <Space>o <Plug>(openbrowser-open)
+vmap <Space>o <Plug>(openbrowser-open)
+
+"---------------------------------------------------------------------------
 " セッションの自動保存と復帰
 " http://hail2u.net/blog/software/vim-auto-save-and-restore-session.html
 autocmd MyVimrc VimEnter * nested call <SID>RestoreSessionWithConfirm()
