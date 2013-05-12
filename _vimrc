@@ -31,6 +31,7 @@ NeoBundleLazy 'tsukkee/lingr-vim', {
       \     },
       \ }
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'tyru/caw.vim'
 
 filetype plugin on
 filetype indent on
