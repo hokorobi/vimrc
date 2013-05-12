@@ -38,9 +38,6 @@ NeoBundleLazy 'Shougo/vimshell', {
 \ }
 " $HOME/_vim/bundle/vimproc/autoload に kaoriya vim 付属の vimproc_win32.dll を
 " 配置
-NeoBundleLazy 'yuratomo/gmail.vim', {
-      \ 'autoload':{ 'commands':['Gmail'] },
-      \ }
 
 filetype plugin on
 filetype indent on
@@ -244,7 +241,7 @@ let versdiff_no_resize=1
 "let versdiff_no_resize=80
 
 "---------------------------------------------------------------------------
-" lingr-vim, gmail
+" lingr-vim
 " id, password は別ファイルから読み込み
 if filereadable(expand('~/_vim/_vimrc.local'))
   source ~/_vim/_vimrc.local
