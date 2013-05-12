@@ -311,3 +311,11 @@ noremap <C-S-Tab> :<C-u>tabprevious<CR>
 cnoremap <expr> /  getcmdtype() == '/' ? '\/' : '/'
 cnoremap <expr> ?  getcmdtype() == '?' ? '\?' : '?'
 
+" ŒŸõ•ûŒü‚ª•Ï‚í‚Á‚Ä‚àn‚Í‰ºAN‚Íã‚ÉˆÚ“®‚Å‚«‚é‚æ‚¤‚É‘Î‰
+nnoremap <expr> n <SID>search_forward_p() ? 'nzvzz' : 'Nzvzz'
+nnoremap <expr> N <SID>search_forward_p() ? 'Nzvzz' : 'nzvzz'
+vnoremap <expr> n <SID>search_forward_p() ? 'nzvzz' : 'Nzvzz'
+vnoremap <expr> N <SID>search_forward_p() ? 'Nzvzz' : 'nzvzz'
+onoremap <expr> n <SID>search_forward_p() ? 'nzz' : 'Nzz'
+onoremap <expr> N <SID>search_forward_p() ? 'Nzz' : 'nzz'
+
