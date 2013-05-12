@@ -81,7 +81,11 @@ set backupdir=M:/Data/Backup/Win/OLS/Text/xyzzy/backup
 if filereadable(expand('$VIM/encmenu_ja.vim'))
   source $VIM/encmenu_ja.vim
 endif
-
+" maplist
+" http://d.hatena.ne.jp/mickey24/searchdiary?word=%2A%5BVim%B4%B0%C1%B4%A5%D0%A5%A4%A5%D6%A5%EB%5D
+if filereadable(expand('$VIM/maplist.vim'))
+  source $VIM/maplist.vim
+endif
 
 " vimrc ‘S‘Ì‚ÅŽg‚¤ augroup ‚ð’è‹`
 augroup MyVimrc
