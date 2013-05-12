@@ -38,7 +38,6 @@ NeoBundleLazy 'Shougo/vimshell', {
 \ }
 " $HOME/_vim/bundle/vimproc/autoload ‚É kaoriya vim •t‘®‚Ì vimproc_win32.dll ‚ð
 " ”z’u
-NeoBundle 'Shougo/vimproc'
 
 filetype plugin on
 filetype indent on
