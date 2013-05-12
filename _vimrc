@@ -32,7 +32,10 @@ NeoBundleLazy 'tsukkee/lingr-vim', {
       \ }
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'tyru/caw.vim'
-NeoBundle 'Shougo/vimshell'
+NeoBundleLazy 'Shougo/vimshell', {
+\   'autoload' : { 'commands' : [ 'VimShellBufferDir', 'VimShell' ] },
+\   'depends': [ 'Shougo/vimproc' ],
+\ }
 " $HOME/_vim/bundle/vimproc/autoload ‚É kaoriya vim •t‘®‚Ì vimproc_win32.dll ‚ð
 " ”z’u
 NeoBundle 'Shougo/vimproc'
