@@ -67,6 +67,12 @@ set statusline=%<%f\ %m%r%h%w%y%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c
 set guicursor=a:blinkon0  " カーソルを点滅させない
 set scrolloff=999  " カーソルは画面上の真ん中に表示する
 set backupdir=M:/Data/Backup/Win/OLS/Text/xyzzy/backup
+" エンコードメニュー追加
+" https://gist.github.com/koron/5562203
+if filereadable(expand('$VIM/encmenu_ja.vim'))
+  source $VIM/encmenu_ja.vim
+endif
+
 
 " vimrc 全体で使う augroup を定義
 augroup MyVimrc
