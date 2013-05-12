@@ -319,3 +319,7 @@ vnoremap <expr> N <SID>search_forward_p() ? 'Nzvzz' : 'nzvzz'
 onoremap <expr> n <SID>search_forward_p() ? 'nzz' : 'Nzz'
 onoremap <expr> N <SID>search_forward_p() ? 'Nzz' : 'nzz'
 
+" インクリメンタルサーチの最中に次、前の候補に移動する
+cnoremap <expr> <C-s> getcmdtype() == '?' ? "<CR>/<Up>" : getcmdtype() == '/' ? "<CR>/<Up>" : "<C-s>"
+cnoremap <expr> <C-r> getcmdtype() == '?' ? "<CR>?<Up>" : getcmdtype() == '/' ? "<CR>?<Up>" : "<C-r>"
+
