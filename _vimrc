@@ -232,8 +232,8 @@ let versdiff_no_resize=1
 "---------------------------------------------------------------------------
 " lingr-vim
 " id, password ÇÕï ÉtÉ@ÉCÉãÇ©ÇÁì«Ç›çûÇ›
-if filereadable(expand('~/_vimrc.local'))
-  source ~/_vimrc.local
+if filereadable(expand('~/_vim/_vimrc.local'))
+  source ~/_vim/_vimrc.local
 endif
 
 "---------------------------------------------------------------------------
