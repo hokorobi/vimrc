@@ -306,3 +306,8 @@ vnoremap v <C-v>
 noremap <C-Tab> :<C-u>tabnext<CR>
 noremap <C-S-Tab> :<C-u>tabprevious<CR>
 
+" インクリメンタルサーチで /, ? を簡単に検索できるようにする
+" http://vim-users.jp/2009/10/hack91/
+cnoremap <expr> /  getcmdtype() == '/' ? '\/' : '/'
+cnoremap <expr> ?  getcmdtype() == '?' ? '\?' : '?'
+
