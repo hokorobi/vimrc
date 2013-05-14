@@ -8,15 +8,15 @@ if has("vim_starting")
 endif
 call neobundle#rc(expand('~/_vim/bundle'))
 
-"NeoBundle 'rgarver/Kwbd.vim'
+NeoBundleDisable 'rgarver/Kwbd.vim'
 filetype plugin on
 filetype indent on
 
 
 "---------------------------------------------------------------------------
 " kwbd
-let s:bundle = neobundle#get('Kwbd.vim')
-function! s:bundle.hooks.on_source(bundle)
+let s:hooks = neobundle#get_hooks('Kwbd.vim')
+function! s:hooks.on_source(bundle)
   function! My_bclose()
     if &modified == 0
       Kwbd
@@ -32,5 +32,5 @@ function! s:bundle.hooks.on_source(bundle)
   endfunction
   noremap <C-w>	:<C-u>call My_bclose()<CR>
 endfunction
-unlet s:bundle
+unlet s:hooks
 
